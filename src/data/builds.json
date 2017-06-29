@@ -1,0 +1,104 @@
+[
+    {
+        "type": "build",
+        "buildNum": "Tenrox-R1_1235",
+        "owner": "",
+        "startTime": "",
+        "status": "Pending"
+    },
+    {
+        "type": "firewall",
+        "buildNum": "432462",
+        "owner": "jtuck",
+        "startTime": "4/18/2014 12:12pm",
+        "status": "Running"
+    },
+    {
+        "type": "firewall",
+        "buildNum": "432461",
+        "owner": "samy",
+        "startTime": "4/18/2014 10:53am",
+        "status": "Rejected",
+        "results": {
+            "metrics": {
+                "test": 64,
+                "maintainability": 53,
+                "security": 64,
+                "workmanship": 72
+            },
+            "build": {
+                "time": "10:46am - 4/17/2014"
+            },
+            "unit_test": {
+                "covered": 76,
+                "passed": 73
+            }
+        }
+    },
+    {
+        "type": "build",
+        "buildNum": "Tenrox-R1_1234",
+        "owner": "",
+        "startTime": "4/17/2014 9:42am",
+        "status": "Complete",
+        "results": {
+            "metrics": {
+                "test": 64,
+                "maintainability": 53,
+                "security": 64,
+                "workmanship": 72
+            },
+            "build": {
+                "time": "10:46am - 4/17/2014"
+            },
+            "unit_test": {
+                "covered": 76,
+                "passed": 73
+            }
+        }
+    },
+    {
+        "type": "firewall",
+        "buildNum": "432460",
+        "owner": "samy",
+        "startTime": "4/17/2014 7:51am",
+        "status": "Rejected",
+        "results": {
+            "metrics": {
+                "test": 64,
+                "maintainability": 53,
+                "security": 64,
+                "workmanship": 72
+            },
+            "build": {
+                "time": "10:46am - 4/17/2014"
+            },
+            "unit_test": {
+                "covered": 76,
+                "passed": 73
+            }
+        }
+    },
+    {
+        "type": "firewall",
+        "buildNum": "432459",
+        "owner": "samy",
+        "startTime": "4/16/2014 6:43am",
+        "status": "Accepted",
+        "results": {
+            "metrics": {
+                "test": 64,
+                "maintainability": 53,
+                "security": 64,
+                "workmanship": 72
+            },
+            "build": {
+                "time": "10:46am - 4/17/2014"
+            },
+            "unit_test": {
+                "covered": 76,
+                "passed": 73
+            }
+        }
+    }
+]

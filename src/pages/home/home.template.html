@@ -1,0 +1,11 @@
+<div class="container">
+    <co-header class="header"></co-header>
+    <div ng-repeat="item in $ctrl.items" class="box {{item.status}}">
+        <co-entry class="co-entry"
+                  entry="item"
+                  openned-item-build="$ctrl.opennedItemBuild"
+                  ng-click="$ctrl.openItem(item)"
+                  ng-disabled="item.status === 'Pending'">
+        </co-entry>
+    </div>
+</div>

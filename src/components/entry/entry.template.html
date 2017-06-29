@@ -1,0 +1,22 @@
+<div class="entry">
+    <div class="box-item">
+        <img ng-src="{{$ctrl.imageIcon}}" class="-icon" />
+        <span class="-label">{{$ctrl.entry.buildNum}}</span>
+    </div>
+    <div class="box-item">{{$ctrl.entry.owner}}</div>
+    <div class="box-item">{{$ctrl.entry.startTime}}</div>
+    <div class="box-item">{{$ctrl.entry.status}}</div>
+</div>
+<div ng-if="$ctrl.entry.results"
+     ng-show="$ctrl.opennedItemBuild === $ctrl.entry.buildNum"
+     style="display: flex; align-items: center; justify-content: center; align-content: space-between; padding: 0px 40px 20px 40px;">
+    <div style="flex: 1; border: 3px solid green; height: 200px; margin-right: 20px; padding-left: 10px">
+        Metrics
+    </div>
+    <div style="flex: 1; border: 3px solid green; height: 200px; margin-right: 20px">
+        Build
+    </div>
+    <div style="flex: 1; border: 3px solid green; height: 200px;">
+        Unit Test
+    </div>
+</div>

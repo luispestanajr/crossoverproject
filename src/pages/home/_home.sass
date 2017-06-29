@@ -1,0 +1,50 @@
+.container
+    display: flex
+    flex-wrap: wrap
+    flex-direction: row
+    margin: 20px
+    width: calc(100vw - 50px)
+
+.box
+    border: 3px solid lightgray
+    min-height: 80px
+    width: 100%
+    margin-bottom: 10px
+    font-size: 1.25em
+    line-height: 80px
+    display: flex
+    cursor: pointer
+    & :hover
+        background-color: #fffde7
+    & .box-item
+        flex: 1
+        padding: 10px 10px 10px 20px
+        & .-icon
+            height: 60px
+            vertical-align: middle
+        & .-label
+            padding-left: 10px
+
+
+.Pending
+    border-color: #bdbdbd
+    background-color: #f5f5f5
+    cursor: default
+    & :hover
+        background-color: #f5f5f5
+
+.Running
+    border-color: #90caf9
+    background-color: #e3f2fd
+    cursor: default
+    & :hover
+        background-color: #e3f2fd
+
+.Rejected
+    border-color: #ef5350
+    background-color: #ffebee
+
+.Accepted, .Complete
+    border-color: #00897b
+    background-color: #e0f2f1
+
