@@ -13,8 +13,6 @@
         function _onInit() {
             $ctrl.loading = false;
 
-            console.log($ctrl);
-
             $ctrl.imageIcon = 'assets/imgs/' +
                 ($ctrl.entry.type === 'firewall' ? 'firewallicon.svg' : 'computericon.svg');
         };

@@ -9,14 +9,58 @@
 </div>
 <div ng-if="$ctrl.entry.results"
      ng-show="$ctrl.opennedItemBuild === $ctrl.entry.buildNum"
-     style="display: flex; align-items: center; justify-content: center; align-content: space-between; padding: 0px 40px 20px 40px;">
-    <div style="flex: 1; border: 3px solid green; height: 200px; margin-right: 20px; padding-left: 10px">
-        Metrics
+     class="results-box">
+    <div class="resultsbox-item metrics">
+        <strong>Metrics</strong>
+        <div class="metric-box">
+            <div class="labels">
+                {{$ctrl.entry.results.metrics.test}}<br>
+                Test
+            </div>
+            <div class="labels">
+                {{$ctrl.entry.results.metrics.maintainability}}<br>
+                Maintainability
+            </div>
+            <div class="labels">
+                {{$ctrl.entry.results.metrics.security}}<br>
+                Security
+            </div>
+            <div class="labels">
+                {{$ctrl.entry.results.metrics.workmanship}}<br>
+                Workmanship
+            </div>
+        </div>    
     </div>
-    <div style="flex: 1; border: 3px solid green; height: 200px; margin-right: 20px">
-        Build
+    <div class="resultsbox-item">
+        <div><strong>Build</strong></div>
+        <div class="build-box">
+            <div>
+                <span class="spanicon"><object type="image/svg+xml" data="./assets/imgs/computericon.svg" class="-svgicon"></object></span>
+                Debug
+            </div>
+            <div>
+                <span class="spanicon"><object type="image/svg+xml" data="./assets/imgs/computericon.svg" class="-svgicon"></object></span>
+                Release
+            </div>
+            <div class="build-time">
+                {{$ctrl.entry.results.build.time}}
+            </div>
+        </div>   
     </div>
-    <div style="flex: 1; border: 3px solid green; height: 200px;">
-        Unit Test
+    <div class="resultsbox-item">
+        <strong>Unit Test</strong>
+        <div class="unit-box">
+            <div class="content">
+                <h1>
+                    {{$ctrl.entry.results.unit_test.passed}}%<br>
+                    <h3>tests passed</h3>
+                </h1>
+            </div>
+            <div class="uncovered_unit_test">
+            <div class="covered_unit_test">
+                {{$ctrl.entry.results.unit_test.covered}}%<br>
+                code covered
+            </div>            
+        </div>        
     </div>
 </div>

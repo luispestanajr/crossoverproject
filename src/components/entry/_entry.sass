@@ -3,3 +3,68 @@
 .entry
     display: flex
     width: 100%
+.results-box    
+    display: flex
+    align-items: center
+    justify-content: center
+    align-content: space-between
+    padding: 0px 40px 20px 40px
+    & .resultsbox-item
+        flex: 1
+        border: 3px solid green
+        max-height: 300px
+        min-height: 260px
+        margin-right: 20px
+        padding: 0 10px 0 10px
+        & .metric-box, .build-box, .unit-box
+            display: flex
+            flex-direction: row
+            width: 100%
+            text-align: center
+            align-items: center
+            justify-content: space-around
+            flex-wrap: wrap
+            line-height: 1em !important
+            & .spanicon::after
+                content: '\A'
+                white-space: pre            
+            & .-svgicon
+                width: 80px
+                fill: blue
+            & .build-time
+                width: 100%
+                text-align: center
+                margin-top: 20px
+        & .build-box
+            > div
+                width: 50%
+
+        & .metric-box
+            height: 160px
+            & .labels
+                line-height: 1.3em
+                width: 50%
+        & .unit-box
+            flex-direction: columns
+            & .content
+                height: 100px
+                line-height: 1em
+
+            & .uncovered_unit_test
+                width: 100%
+                background-color: red !important
+                position: relative
+                z-index: 0
+                line-height: 20px
+
+            & .covered_unit_test
+                width: calc(76% - 20px)
+                text-align: center
+                background-color: green !important
+                line-height: 20px
+                padding: 10px
+                position: relative
+                z-index: 1
+                color: #ffffff
+                font-size: 20px
+        
